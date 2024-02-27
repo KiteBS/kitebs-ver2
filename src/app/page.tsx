@@ -2,7 +2,12 @@ import { Button } from "@/components/ui/button";
 import { UserButton } from "@clerk/nextjs";
 import { auth, currentUser } from "@clerk/nextjs";
 import Link from "next/link";
-import { ArrowRight, LogIn, LayoutDashboard } from "lucide-react";
+import {
+  ArrowRight,
+  LogIn,
+  LayoutDashboard,
+  UserRoundPlus,
+} from "lucide-react";
 import NavBar from "@/components/NavBar";
 import DetailsFooter from "@/components/DetailsFooter";
 
@@ -20,16 +25,16 @@ export default async function Home() {
             <div className="flex items-center">
               {isAuth ? (
                 <div>
-                  <h1 className="mr-2 text-4xl font-semibold">
+                  <h1 className="text-4xl font-semibold">
                     Hi {user?.firstName}
                   </h1>
                 </div>
               ) : (
                 <div>
-                  <h1 className="mr-3 text-5xl font-semibold">
+                  <h1 className="text-5xl font-semibold">
                     Elevate Life - Fly With Kite
                   </h1>
-                  <div className="max-w-xl mt-2 text-xl">
+                  <div className="mt-2 text-xl">
                     <p>
                       Join millions of students, researchers, and professionals
                       to instantly understand PDFs
@@ -37,15 +42,16 @@ export default async function Home() {
                   </div>
                 </div>
               )}
-
-              <UserButton afterSignOutUrl="/" />
+              <div className="ml-2">
+                <UserButton afterSignOutUrl="/" />
+              </div>
             </div>
 
-            <div className="flex">
+            <div className="gap-4 flex mt-5">
               <div>
                 {" "}
                 {isAuth ? (
-                  <Link href="/sign-in">
+                  <Link href="/dashboard">
                     <Button>
                       Dashboard
                       <LayoutDashboard className="w-4 h-4 ml-2" />
@@ -66,7 +72,7 @@ export default async function Home() {
                   <Link href="/sign-up">
                     <Button>
                       Sign up
-                      <LogIn className="w-4 h-4 ml-2"></LogIn>
+                      <UserRoundPlus className="w-4 h-4 ml-2" />
                     </Button>
                   </Link>
                 )}
