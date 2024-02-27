@@ -6,7 +6,7 @@ type Feature = string;
 
 type Plan = {
   name: string;
-  price: string;
+  price?: string;
   bestPlan: boolean;
   currency: string;
   requests?: number;
