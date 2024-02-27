@@ -41,7 +41,7 @@ export default async function Home() {
               <UserButton afterSignOutUrl="/" />
             </div>
 
-            <div className="w-full gap-4 mt-2">
+            <div className="flex">
               <div>
                 {" "}
                 {isAuth ? (

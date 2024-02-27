@@ -8,7 +8,7 @@ import { BiNews } from "react-icons/bi";
 export const routes = [
   {
     title: "Home",
-    href: "#",
+    href: "/",
     Icon: FaHome,
   },
   {
