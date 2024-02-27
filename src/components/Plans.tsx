@@ -9,7 +9,7 @@ type Plan = {
   price: string;
   bestPlan: boolean;
   currency: string;
-  requests: number;
+  requests?: number;
   features: Feature[];
 };
 const plans: Plan[] = [
@@ -18,20 +18,29 @@ const plans: Plan[] = [
     price: "£50",
     bestPlan: false,
     currency: "/ month",
-    features: ["Unlimited projects", "extended free trial FOR EARLY USERS"],
+    features: [
+      "Access to all the offers",
+      "At least extra 10% discounts at our partners' stores",
+    ],
   },
   {
     name: "Diamond",
     price: "£75",
     bestPlan: true,
     currency: "/ month",
-    features: ["Unlimited projects", "extended free trial FOR EARLY USERS"],
+    features: [
+      "Access to all the offers",
+      "At least extra 20% discounts at our partners' stores",
+    ],
   },
   {
     name: "Enterprise",
     currency: "Let's Talk!",
     bestPlan: false,
-    features: ["Unlimited projects", "extended free trial FOR EARLY USERS"],
+    features: [
+      "Access to all the offers",
+      "With a special price for many members",
+    ],
   },
 ];
 
