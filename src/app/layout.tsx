@@ -10,7 +10,7 @@ export const runtime = "edge";
 
 export const metadata: Metadata = {
   title: "KITE Business Solutions",
-  description: "Elevate Life - Fly with Kite",
+  description: "Fly With Kite - Elevate Life",
 };
 
 export default function RootLayout({

@@ -28,16 +28,21 @@ export default async function Home() {
                   <h1 className="text-4xl font-semibold">
                     Hi {user?.firstName}
                   </h1>
+                  {/*Add a beating icon here*/}
+                  <p>
+                    It&apos;s great to have you here. Enjoy your discounts
+                    today!
+                  </p>
                 </div>
               ) : (
                 <div>
                   <h1 className="text-5xl font-semibold">
-                    Elevate Life - Fly With Kite
+                    Fly With Kite - Elevate Life
                   </h1>
                   <div className="mt-2 text-xl">
                     <p>
-                      Join millions of students, researchers, and professionals
-                      to instantly understand PDFs
+                      Awaiting plenty of discounts on your fingers. Join us
+                      today!
                     </p>
                   </div>
                 </div>
