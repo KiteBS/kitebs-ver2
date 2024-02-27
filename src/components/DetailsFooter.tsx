@@ -44,19 +44,13 @@ const DetailsFooter = () => {
             className="flex justify-between"
             style={{ color: "#053F5C", fontSize: iconSize }}
           >
-            <Link href="https://www.facebook.com/Viet80s.Nott" className="mx-1">
+            <Link href="https://www.facebook.com/" className="mx-1">
               <FontAwesomeIcon icon={faFacebook} />
             </Link>
-            <Link
-              href="https://www.instagram.com/viet80s.nottingham/"
-              className="mx-1"
-            >
+            <Link href="https://www.instagram.com/" className="mx-1">
               <FontAwesomeIcon icon={faInstagram} />
             </Link>
-            <Link
-              href="https://www.youtube.com/@viet80soficialuk"
-              className="mx-1"
-            >
+            <Link href="https://www.youtube.com/" className="mx-1">
               <FontAwesomeIcon icon={faYoutube} />
             </Link>
           </div>
@@ -70,14 +64,14 @@ const DetailsFooter = () => {
           <p style={{ fontWeight: "bolder" }}>Links</p>
           <ul>
             <li>
-              <Link href="/mobile-app">- Offers</Link>
+              <Link href="/offers">- Offers</Link>
             </li>
 
             <li>
-              <Link href="/street-food">- News</Link>
+              <Link href="/news">- News</Link>
             </li>
             <li>
-              <Link href="/restaurant">- Pricing</Link>
+              <Link href="/pricing">- Pricing</Link>
             </li>
 
             <li>

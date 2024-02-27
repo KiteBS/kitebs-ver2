@@ -23,7 +23,7 @@ export const routes = [
   },
   {
     title: "Pricing",
-    href: "#",
+    href: "/pricing",
     Icon: IoIosPricetags,
   },
   {
