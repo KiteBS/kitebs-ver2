@@ -9,7 +9,6 @@ type Plan = {
   price?: string;
   bestPlan: boolean;
   currency: string;
-  requests?: number;
   features: Feature[];
 };
 const plans: Plan[] = [
@@ -56,8 +55,7 @@ const Plans = () => {
           >
             <h2>{plan.name}</h2>
             <p>
-              {plan.price} {plan.currency} • {plan.requests} request
-              {plan.requests > 1 ? "s" : ""}
+              {plan.price} {plan.currency}
             </p>
             <ul>
               {plan.features.map((feature, index) => (
