@@ -24,15 +24,21 @@ export default async function Home() {
           <div className="flex flex-col items-center text-center">
             <div className="flex items-center">
               {isAuth ? (
-                <div>
-                  <h1 className="text-4xl font-semibold">
-                    Hi {user?.firstName}
-                  </h1>
-                  {/*Add a beating icon here*/}
-                  <p>
-                    It&apos;s great to have you here. Enjoy your discounts
-                    today!
-                  </p>
+                <div className="flex flex-col items-center text-center">
+                  <div className="flex items-center">
+                    <h1 className="text-4xl font-semibold">
+                      Hi {user?.firstName}
+                    </h1>{" "}
+                    <div className="ml-2">
+                      <UserButton afterSignOutUrl="/" />
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-xl font-medium">
+                      It&apos;s great to have you here. Enjoy your discounts
+                      today!
+                    </p>
+                  </div>
                 </div>
               ) : (
                 <div>
@@ -47,9 +53,6 @@ export default async function Home() {
                   </div>
                 </div>
               )}
-              <div className="ml-2">
-                <UserButton afterSignOutUrl="/" />
-              </div>
             </div>
 
             <div className="gap-4 flex mt-5">
