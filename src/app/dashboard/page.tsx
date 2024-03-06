@@ -1,4 +1,5 @@
 import DetailsFooter from "@/components/DetailsFooter";
+import FileUpload from "@/components/FileUpload";
 import NavBar from "@/components/NavBar";
 import { auth, currentUser } from "@clerk/nextjs";
 
@@ -26,6 +27,7 @@ export default async function Page() {
             </div>
             <div>
               <h1>Dashboard</h1>
+              <FileUpload />
             </div>
           </div>
         </div>

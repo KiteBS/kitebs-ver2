@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import NavBar from "@/components/NavBar";
 import DetailsFooter from "@/components/DetailsFooter";
+import FileUpload from "@/components/FileUpload";
 
 export default async function Home() {
   const { userId } = await auth();
@@ -59,12 +60,16 @@ export default async function Home() {
               <div>
                 {" "}
                 {isAuth ? (
-                  <Link href="/dashboard">
-                    <Button>
-                      Dashboard
-                      <LayoutDashboard className="w-4 h-4 ml-2" />
-                    </Button>
-                  </Link>
+                  <>
+                    <div className="flex">
+                      <Link href="/dashboard">
+                        <Button>
+                          Dashboard
+                          <LayoutDashboard className="w-4 h-4 ml-2" />
+                        </Button>
+                      </Link>
+                    </div>
+                  </>
                 ) : (
                   <Link href="/sign-in">
                     <Button>
